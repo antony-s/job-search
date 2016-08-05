@@ -1,0 +1,10 @@
+[
+    {
+        "name": "Feed 1",
+        "url": "example.com/feed_1?search_term={search_term}&location={location}&distance={distance}"
+    },
+    {
+        "name": "Feed 2",
+        "url": "example.com/feed_2?search_term={search_term}&location={location}&distance={distance}"
+    }
+]
