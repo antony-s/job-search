@@ -50,7 +50,7 @@ class TestFeedParsing(unittest.TestCase):
         }
         self.job_search = JobSearch('tests/endpoints.json', self.endpoint_args)
 
-    def testMergeFeeds(self):
+    def test_merge_feeds(self):
         self.job_search.feeds = [self.feed_1, self.feed_2]
         self.job_search.merge_feeds()
         self.assertListEqual(
@@ -59,7 +59,7 @@ class TestFeedParsing(unittest.TestCase):
         )
 
     @patch.object(feedparser, 'parse')
-    def testFetchFeeds(self, mock_parse):
+    def test_fetch_feeds(self, mock_parse):
         mock_parse.side_effect = [self.feed_1, self.feed_2]
         # Check `feeds` is empty
         self.assertListEqual([], self.job_search.feeds)
