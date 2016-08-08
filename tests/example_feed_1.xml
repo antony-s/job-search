@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:a10="http://www.w3.org/2005/Atom" version="2.0">
+  <channel xmlns:os="http://a9.com/-/spec/opensearch/1.1/">
+    <title>"python" jobs within 20 miles of leeds - Feed 1</title>
+    <link>http://example.com/feed_1</link>
+    <description>"python" jobs within 20 miles of leeds - Feed 1</description>
+    <os:totalResults>3</os:totalResults>
+    <item>
+      <guid isPermaLink="true">https://example.com/feed_1/jobs/job_1</guid>
+      <link>https://example.com/feed_1/jobs/job_1</link>
+      <a10:author>
+        <a10:name>Feed 1</a10:name>
+      </a10:author>
+      <category>python</category>
+      <title>Feed 1 job 1</title>
+      <description>Feed 1 job 1 description</description>
+      <pubDate>Sun, 07 Aug 2016 13:10:18 Z</pubDate>
+      <a10:updated>2016-08-07T13:10:18Z</a10:updated>
+      <location xmlns="http://example.com/feed_1/jobs/">Leeds, UK</location>
+    </item>
+    <item>
+      <guid isPermaLink="true">https://example.com/feed_1/jobs/job_2</guid>
+      <link>https://example.com/feed_1/jobs/job_2</link>
+      <a10:author>
+        <a10:name>Feed 1</a10:name>
+      </a10:author>
+      <category>python</category>
+      <title>Feed 1 job 2</title>
+      <description>Feed 1 job 2 description</description>
+      <pubDate>Sun, 07 Aug 2016 14:10:18 Z</pubDate>
+      <a10:updated>2016-08-07T14:10:18Z</a10:updated>
+      <location xmlns="http://example.com/feed_1/jobs/">Leeds, UK</location>
+    </item>
+    <item>
+      <guid isPermaLink="true">https://example.com/feed_1/jobs/job_3</guid>
+      <link>https://example.com/feed_1/jobs/job_3</link>
+      <a10:author>
+        <a10:name>Feed 1</a10:name>
+      </a10:author>
+      <category>python</category>
+      <title>Feed 1 job 3</title>
+      <description>Feed 1 job 3 description</description>
+      <pubDate>Sun, 07 Aug 2016 15:10:18 Z</pubDate>
+      <a10:updated>2016-08-07T15:10:18Z</a10:updated>
+      <location xmlns="http://example.com/feed_1/jobs/">Leeds, UK</location>
+    </item>
+  </channel>
+</rss>
