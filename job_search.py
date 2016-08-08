@@ -1,5 +1,7 @@
 import json
 
+import feedparser
+
 
 class JobSearch(object):
 
@@ -20,3 +22,8 @@ class JobSearch(object):
         self.merged_feeds.sort(
             key=lambda feed: feed['published_parsed'], reverse=True
         )
+
+    def fetch_feeds(self):
+        self.feeds = [
+            feedparser.parse(endpoint) for endpoint in self.endpoints
+        ]

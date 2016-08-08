@@ -57,3 +57,12 @@ class TestFeedParsing(unittest.TestCase):
             pickle.load(open('tests/merged_feeds.pkl')),
             self.job_search.merged_feeds
         )
+
+    @patch.object(feedparser, 'parse')
+    def testFetchFeeds(self, mock_parse):
+        mock_parse.side_effect = [self.feed_1, self.feed_2]
+        # Check `feeds` is empty
+        self.assertListEqual([], self.job_search.feeds)
+        self.job_search.fetch_feeds()
+        # test `feeds` is populated after call to `fetch_feeds`
+        self.assertListEqual([self.feed_1, self.feed_2], self.job_search.feeds)
