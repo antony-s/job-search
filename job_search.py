@@ -27,3 +27,13 @@ class JobSearch(object):
         self.feeds = [
             feedparser.parse(endpoint) for endpoint in self.endpoints
         ]
+
+    def display_feeds(self):
+        for feed in self.merged_feeds:
+            print 'Title: {}'.format(feed.title)
+            print 'Company: {}'.format(feed.author)
+            print 'Summary: {}'.format(feed.summary)
+            print 'Link(s): {}'.format(
+                ' '.join([link.href for link in feed.links])
+            )
+            print '---'

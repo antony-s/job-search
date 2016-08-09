@@ -1,0 +1,30 @@
+Title: Feed 1 job 3
+Company: Feed 1
+Summary: Feed 1 job 3 description
+Link(s): https://example.com/feed_1/jobs/job_3
+---
+Title: Feed 2 job 3
+Company: Feed 2
+Summary: Feed 2 job 3 description
+Link(s): https://example.com/feed_2/jobs/job_3
+---
+Title: Feed 1 job 2
+Company: Feed 1
+Summary: Feed 1 job 2 description
+Link(s): https://example.com/feed_1/jobs/job_2
+---
+Title: Feed 2 job 2
+Company: Feed 2
+Summary: Feed 2 job 2 description
+Link(s): https://example.com/feed_2/jobs/job_2
+---
+Title: Feed 1 job 1
+Company: Feed 1
+Summary: Feed 1 job 1 description
+Link(s): https://example.com/feed_1/jobs/job_1
+---
+Title: Feed 2 job 1
+Company: Feed 2
+Summary: Feed 2 job 1 description
+Link(s): https://example.com/feed_2/jobs/job_1
+---

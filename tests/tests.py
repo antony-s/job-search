@@ -1,4 +1,5 @@
 import pickle
+from StringIO import StringIO
 import unittest
 
 import feedparser
@@ -66,3 +67,13 @@ class TestFeedParsing(unittest.TestCase):
         self.job_search.fetch_feeds()
         # test `feeds` is populated after call to `fetch_feeds`
         self.assertListEqual([self.feed_1, self.feed_2], self.job_search.feeds)
+
+    @patch('sys.stdout', new_callable=StringIO)
+    def test_feed_display(self, mock_stdout):
+        self.job_search.feeds = [self.feed_1, self.feed_2]
+        self.job_search.merge_feeds()
+        self.job_search.display_feeds()
+        self.assertEqual(
+            mock_stdout.getvalue(),
+            open('tests/feed_output.txt', 'r').read()
+        )
