@@ -25,7 +25,7 @@ class JobSearch(object):
 
     def fetch_feeds(self):
         self.feeds = [
-            feedparser.parse(endpoint) for endpoint in self.endpoints
+            feedparser.parse(endpoint['url']) for endpoint in self.endpoints
         ]
 
     def display_feeds(self):

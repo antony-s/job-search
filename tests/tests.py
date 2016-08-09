@@ -3,7 +3,7 @@ from StringIO import StringIO
 import unittest
 
 import feedparser
-from mock import patch
+from mock import call, patch
 
 from job_search import JobSearch
 
@@ -65,6 +65,12 @@ class TestFeedParsing(unittest.TestCase):
         # Check `feeds` is empty
         self.assertListEqual([], self.job_search.feeds)
         self.job_search.fetch_feeds()
+        # test feedparser.parse called with correct arguments
+        expected_args = [
+            call(self.job_search.endpoints[0]['url']),
+            call(self.job_search.endpoints[1]['url']),
+        ]
+        mock_parse.assert_has_calls(expected_args)
         # test `feeds` is populated after call to `fetch_feeds`
         self.assertListEqual([self.feed_1, self.feed_2], self.job_search.feeds)
 
